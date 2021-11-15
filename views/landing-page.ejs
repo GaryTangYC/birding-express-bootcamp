@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <!-- AFTER HTML loads in browser, browser will request for CSS. -->
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+
+<body>
+ <% printAllNotes.forEach((el)=> { %>
+  Habitat: <%= el.habitat %> <br>
+
+  Date: <%= el.date %>  <br>
+
+  Appearance: <%= el.appearance %>  <br>
+
+  Behaviour_ID: <%= el.behavior_id %>  <br>
+
+  Vocalisation: <%= el.vocalisation %>  <br>
+
+  Flock_size: <%= el.flock_size %> <br>
+
+  Species_ID: <%= el.species_id %>  <br>
+
+  User_IDnum: <%= el.user_idnum %>  <br>
+<% }) %>
+</body>
+
+<footer>
+  <p><a href="/">Return to main page</a></p>
+</footer>
+
+</html>
